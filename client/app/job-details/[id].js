@@ -15,12 +15,12 @@ const jobDetails = () => {
     const [refreshing, setRefreshing] = useState(false);
     const [activeTab, setActiveTab]= useState(tabs[0]);
 
-    // const onRefresh=()=>useCallback(()=>{
-    //   setRefreshing(true);
-    //   refetch()
-    //   setRefreshing(false)
+    const onRefresh=()=>useCallback(()=>{
+      setRefreshing(true);
+      refetch()
+      setRefreshing(false)
 
-    // },[])
+    },[])
     const {data , isLoading,error,refetch}= useFetch('job-details',{
         job_id:params.id
     })

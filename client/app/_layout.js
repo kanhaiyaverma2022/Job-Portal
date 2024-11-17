@@ -3,7 +3,7 @@ import { View ,Text} from 'react-native'
 import { Slot,Stack } from 'expo-router'
  import React ,{ useCallback }from 'react'
 
- import { useFonts } from 'expo-font';
+ import { useFonts } from 'expo-font'
  import * as SplashScreen from 'expo-splash-screen'
 
 

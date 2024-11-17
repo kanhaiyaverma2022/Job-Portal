@@ -7,8 +7,7 @@ const index = () => {
   return (
     
       <Main/>
-    
- 
+
   )
 }
 
